@@ -8,36 +8,52 @@ export default function SpecificationsTable() {
       category: 'Pondasi & Struktur',
       icon: '🏗️',
       items: [
-        { label: 'Pondasi', value: 'Batu kali + Slop Beton', status: '✓' },
-        { label: 'Kolom', value: 'Beton K-300 Berkualitas', status: '✓' },
-        { label: 'Sistem Tahan Gempa', value: 'Ya - Standar SNI', status: '✓' },
+        { label: 'Pondasi', value: 'Batu Kali', status: '✓' },
+        { label: 'Rangka Atap', value: 'Baja Ringan', status: '✓' },
       ],
     },
     {
-      category: 'Dinding & Atap',
+      category: 'Dinding & Plafond',
       icon: '🏠',
       items: [
-        { label: 'Dinding', value: 'Bata Merah 1/2 batu', status: '✓' },
-        { label: 'Plafon', value: 'Gypsum & Kayu Berkualitas', status: '✓' },
-        { label: 'Atap', value: 'Genteng Keramik Premium', status: '✓' },
+        { label: 'Dinding', value: 'Double Dinding Hebel Plester Finishing Cat', status: '✓' },
+        { label: 'Rangka Plafond', value: 'Hollow', status: '✓' },
+        { label: 'Plafond', value: 'GRC Finishing Cat', status: '✓' },
       ],
     },
     {
-      category: 'Lantai & Finishing',
+      category: 'Lantai & Atap',
       icon: '✨',
       items: [
-        { label: 'Lantai Rumah', value: 'Keramik 40x40 cm Premium', status: '✓' },
-        { label: 'Lantai Kamar Mandi', value: 'Keramik Motif Anti Slip', status: '✓' },
-        { label: 'Pintu & Jendela', value: 'Kayu Jati Premium', status: '✓' },
+        { label: 'Lantai', value: 'Ceramic Tile 40x40', status: '✓' },
+        { label: 'Penutup Atap', value: 'Genteng Beton Flat', status: '✓' },
       ],
     },
     {
-      category: 'Utilitas & Listrik',
+      category: 'Kusen, Pintu & Jendela',
+      icon: '🪟',
+      items: [
+        { label: 'Kusen & Pintu', value: 'UPVC', status: '✓' },
+        { label: 'Pintu Kamar Mandi', value: 'PVC', status: '✓' },
+        { label: 'Jendela', value: 'Kaca Polos', status: '✓' },
+      ],
+    },
+    {
+      category: 'Sanitasi & Kitchen',
+      icon: '🚿',
+      items: [
+        { label: 'Sanitair', value: 'Kloset Duduk + Shower', status: '✓' },
+        { label: 'Kitchen', value: 'Meja Dapur + Kitchen Sink', status: '✓' },
+      ],
+    },
+    {
+      category: 'Utilitas & Instalasi',
       icon: '⚡',
       items: [
-        { label: 'Air Bersih', value: 'Sumur Bor + Sistem PDAM', status: '✓' },
-        { label: 'Listrik', value: '1300 Watt Stabil Terjamin', status: '✓' },
-        { label: 'Sistem Limbah', value: 'Septik Tank + Drainase Optimal', status: '✓' },
+        { label: 'Air', value: 'Sumur Pantek + Semi Jet Pump', status: '✓' },
+        { label: 'Listrik', value: '1300 VA', status: '✓' },
+        { label: 'Septic Tank', value: 'Biotech', status: '✓' },
+        { label: 'Taman', value: 'Pohon Buah', status: '✓' },
       ],
     },
   ]
@@ -143,7 +159,7 @@ export default function SpecificationsTable() {
             Tim kami siap memberikan penjelasan lengkap tentang spesifikasi dan kualitas bangunan Dutaland Residence
           </p>
           <button
-            onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20ingin%20penjelasan%20detail%20tentang%20spesifikasi%20bangunan%20Dutaland%20Residence'}
+            onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20ingin%20penjelasan%20detail%20tentang%20spesifikasi%20bangunan%20Dutaland%20Residence'}
             className="px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-xl hover:scale-105 inline-flex items-center gap-2"
             style={{ backgroundColor: 'var(--property-yellow)', color: 'var(--property-green)' }}
           >

@@ -9,40 +9,40 @@ export default function GallerySection() {
 
   const images = [
     {
-      src: 'https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=600&q=80',
+      src: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891',
       title: 'Taman Bermain',
       category: 'Fasilitas',
-      description: 'Area taman dengan berbagai fasilitas bermain yang aman untuk anak-anak'
+      description: 'Taman bermain yang aman dan nyaman dengan berbagai permainan untuk anak-anak Dutaland'
     },
     {
-      src: 'https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80',
-      title: 'Kolam Renang',
-      category: 'Fasilitas',
-      description: 'Kolam renang Olympic-size yang indah untuk seluruh keluarga'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80',
-      title: 'Lapangan Olahraga',
-      category: 'Fasilitas',
-      description: 'Fasilitas olahraga lengkap dengan lapangan basket dan tennis court'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1511649475669-e288648b2339?w=600&q=80',
-      title: 'Taman Komunitas',
-      category: 'Area Hijau',
-      description: 'Ruang hijau yang indah untuk interaksi dan silaturahmi komunitas'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1546970375-2f63ab7a1b2b?w=600&q=80',
-      title: 'Gerbang Utama',
+      src: 'https://images.unsplash.com/photo-1561487281-d59fee0ab84f',
+      title: 'Keamanan 24 Jam',
       category: 'Keamanan',
-      description: 'Gerbang utama dengan sistem keamanan modern dan akses terkontrol'
+      description: 'Sistem keamanan modern dengan CCTV dan petugas profesional menjaga 24 jam non-stop'
     },
     {
-      src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80',
+      src: 'https://images.unsplash.com/photo-1565008576549-bdde6e1a3543',
+      title: 'Jalan Perumahan Rapi',
+      category: 'Infrastruktur',
+      description: 'Jalan perumahan yang rapi, halus, dan lebar dengan drainase optimal untuk kenyamanan'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e',
+      title: 'Suasana Asri',
+      category: 'Lingkungan',
+      description: 'Lingkungan asri penuh penghijauan dengan taman dan pohon-pohon indah di setiap sudut'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1571508601166-72f91dca6030',
+      title: 'Gerbang Utama',
+      category: 'Akses',
+      description: 'Gerbang utama yang megah dengan sistem akses masuk modern dan terkontrol'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1553531088-189a29cf9584',
       title: 'Kantor Pemasaran',
       category: 'Layanan',
-      description: 'Kantor marketing yang representatif dengan tim profesional siap melayani'
+      description: 'Kantor pemasaran profesional siap membantu konsultasi lengkap untuk investasi properti Anda'
     },
   ]
 
@@ -157,7 +157,7 @@ export default function GallerySection() {
             Ingin melihat galeri lengkap dan berkunjung langsung ke lokasi?
           </p>
           <button
-            onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20ingin%20mendapatkan%20galeri%20lengkap%20dan%20jadwal%20kunjungan%20ke%20Dutaland%20Residence'}
+            onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20ingin%20mendapatkan%20galeri%20lengkap%20dan%20jadwal%20kunjungan%20ke%20Dutaland%20Residence'}
             className="px-8 py-4 rounded-lg font-bold text-white text-lg transition-all hover:shadow-xl hover:scale-105 inline-flex items-center gap-2"
             style={{ backgroundColor: 'var(--property-green)' }}
           >

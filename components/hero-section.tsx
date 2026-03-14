@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-3000 hover:scale-105"
           style={{
-            backgroundImage: 'linear-gradient(135deg, rgba(47, 125, 74, 0.5) 0%, rgba(31, 82, 48, 0.6) 100%), url(https://images.unsplash.com/photo-1570129477492-45927003d148?w=1400&h=900&fit=crop&q=80)',
+            backgroundImage: 'url(/Background-blur.jpg)',
           }}
         />
         {/* Decorative Elements */}
@@ -94,7 +94,7 @@ export default function HeroSection() {
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button
-              onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20Dutaland%20Residence'}
+              onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20Dutaland%20Residence'}
               className="px-8 py-4 rounded-lg font-bold text-white text-lg border-2 border-white hover:bg-white/20 transition-all hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2"
             >
               💬 Chat WhatsApp

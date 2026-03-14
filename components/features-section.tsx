@@ -112,7 +112,7 @@ export default function FeaturesSection() {
             Tertarik dengan penawaran kami? Hubungi tim kami sekarang juga!
           </p>
           <button
-            onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20Dutaland%20Residence'}
+            onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20Dutaland%20Residence'}
             className="px-8 py-4 rounded-lg font-bold text-white text-lg transition-all hover:shadow-xl hover:scale-105 inline-flex items-center gap-2"
             style={{ backgroundColor: 'var(--property-green)' }}
           >

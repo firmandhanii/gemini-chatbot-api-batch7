@@ -30,7 +30,7 @@ export default function CTASection() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <button
-            onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20ingin%20survey%20lokasi%20Dutaland%20Residence'}
+            onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20ingin%20survey%20lokasi%20Dutaland%20Residence'}
             className="px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2 group"
             style={{ backgroundColor: 'var(--property-yellow)', color: 'var(--property-green)' }}
           >
@@ -87,7 +87,7 @@ export default function CTASection() {
             Kunjungi lokasi kami hari ini dan rasakan pengalaman hunian impian Anda
           </p>
           <a
-            href="https://wa.me/087875483400?text=Saya%20ingin%20tahu%20alamat%20lokasi%20Dutaland%20Residence"
+            href="https://wa.me/+6287875483400?text=Saya%20ingin%20tahu%20alamat%20lokasi%20Dutaland%20Residence"
             className="text-yellow-300 hover:text-yellow-200 font-bold underline transition-colors"
           >
             Dapatkan petunjuk arah →

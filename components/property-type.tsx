@@ -1,29 +1,32 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronLeft, ChevronRight, Check } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Check, PlayCircle } from 'lucide-react'
 
 export default function PropertyType() {
-  const [currentImage, setCurrentImage] = useState(0)
+  const [currentItem, setCurrentItem] = useState(0)
 
-  const images = [
-    'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
-    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
-    'https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&q=80',
-    'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80',
+  const galleryItems = [
+    { type: 'video', src: '/video%20denah.mp4' },
+    { type: 'image', src: '/cluster.jpeg' },
+    { type: 'image', src: '/cluster%201.jpeg' },
+    { type: 'image', src: '/cluster%202.jpeg' },
+    { type: 'image', src: '/background%201.jpg' },
+    { type: 'image', src: '/Rumah%20depan.jpeg' },
+    { type: 'image', src: '/Masjid.jpeg' },
   ]
 
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length)
+  const nextItem = () => {
+    setCurrentItem((prev) => (prev + 1) % galleryItems.length)
   }
 
-  const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length)
+  const prevItem = () => {
+    setCurrentItem((prev) => (prev - 1 + galleryItems.length) % galleryItems.length)
   }
 
   const specs = [
-    { label: 'Luas Tanah', value: '30 m²', icon: '📐' },
-    { label: 'Luas Bangunan', value: '60 m²', icon: '🏠' },
+    { label: 'Luas Bangunan', value: '30 m²', icon: '🏠' },
+    { label: 'Luas Tanah', value: '60 m²', icon: '📐' },
     { label: 'Kamar Tidur', value: '2 Kamar', icon: '🛏️' },
     { label: 'Kamar Mandi', value: '1-2 Kamar', icon: '🚿' },
     { label: 'Dapur', value: 'Modern Minimalis', icon: '🍳' },
@@ -58,47 +61,69 @@ export default function PropertyType() {
           {/* Gallery */}
           <div className="space-y-4">
             <div className="relative rounded-2xl overflow-hidden h-96 md:h-[500px] bg-gray-200 shadow-2xl group">
-              <img
-                src={images[currentImage]}
-                alt="Rumah Tipe 30/60"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              {galleryItems[currentItem].type === 'image' ? (
+                <img
+                  key={galleryItems[currentItem].src}
+                  src={galleryItems[currentItem].src}
+                  alt="Rumah Tipe 30/60"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <video
+                  key={galleryItems[currentItem].src}
+                  src={galleryItems[currentItem].src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              )}
               
               {/* Navigation Buttons */}
               <button
-                onClick={prevImage}
+                onClick={prevItem}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 transition-all hover:scale-110 z-10 shadow-lg"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-900" />
               </button>
               <button
-                onClick={nextImage}
+                onClick={nextItem}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 transition-all hover:scale-110 z-10 shadow-lg"
               >
                 <ChevronRight className="w-6 h-6 text-gray-900" />
               </button>
 
-              {/* Image Counter */}
+              {/* Item Counter */}
               <div className="absolute bottom-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                {currentImage + 1} / {images.length}
+                {currentItem + 1} / {galleryItems.length}
               </div>
             </div>
 
             {/* Thumbnails */}
             <div className="flex gap-3">
-              {images.map((img, idx) => (
+              {galleryItems.map((item, idx) => (
                 <button
-                  key={idx}
-                  onClick={() => setCurrentImage(idx)}
+                  key={item.src}
+                  onClick={() => setCurrentItem(idx)}
                   className={`relative w-24 h-24 rounded-xl overflow-hidden transition-all transform hover:scale-110 ${
-                    currentImage === idx ? 'ring-4 shadow-lg' : 'ring-1 ring-gray-200'
+                    currentItem === idx ? 'ring-4 shadow-lg' : 'ring-1 ring-gray-200'
                   }`}
                   style={{
-                    borderColor: currentImage === idx ? 'var(--property-green)' : 'transparent',
+                    borderColor: currentItem === idx ? 'var(--property-green)' : 'transparent',
                   }}
                 >
-                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
-                  {currentImage === idx && (
+                  <img 
+                    src={item.type === 'image' ? item.src : (galleryItems[1]?.src || '')} 
+                    alt={`Thumbnail ${idx + 1}`} 
+                    className="w-full h-full object-cover" 
+                  />
+                  {item.type === 'video' && (
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <PlayCircle size={32} className="text-white" />
+                    </div>
+                  )}
+                  {currentItem === idx && (
                     <div className="absolute inset-0 bg-white/20"></div>
                   )}
                 </button>
@@ -168,7 +193,7 @@ export default function PropertyType() {
               </div>
               <p className="text-sm text-gray-600 mb-4">Cicilan Rp 1.2 Juta Flat hingga Lunas</p>
               <button
-                onClick={() => window.location.href = 'https://wa.me/087875483400?text=Saya%20tertarik%20dengan%20tipe%20rumah%2030%2F60'}
+                onClick={() => window.location.href = 'https://wa.me/+6287875483400?text=Saya%20tertarik%20dengan%20tipe%20rumah%2030%2F60'}
                 className="w-full px-8 py-4 rounded-lg font-bold text-white text-lg transition-all hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2"
                 style={{ backgroundColor: 'var(--property-green)' }}
               >
