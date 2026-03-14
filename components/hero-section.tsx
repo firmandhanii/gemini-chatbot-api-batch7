@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-3000 hover:scale-105"
           style={{
-            backgroundImage: 'url(/Background-blur.jpg)',
+            backgroundImage: 'url(/background-blur.jpg)',
           }}
         />
         {/* Decorative Elements */}
