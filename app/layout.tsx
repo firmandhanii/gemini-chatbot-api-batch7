@@ -48,7 +48,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="id" className={`${poppins.variable} ${inter.variable}`}>
+    <html 
+      lang="id" 
+      className={`${poppins.variable} ${inter.variable}`}
+      style={{
+        backgroundImage: 'url(/background-blur.jpg)',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh'
+      }}
+    >
       <body className="font-sans antialiased">
         {children}
         <ChatWidget />
