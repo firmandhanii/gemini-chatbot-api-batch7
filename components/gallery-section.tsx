@@ -9,40 +9,40 @@ export default function GallerySection() {
 
   const images = [
     {
-      src: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891',
-      title: 'Taman Bermain',
-      category: 'Fasilitas',
-      description: 'Taman bermain yang aman dan nyaman dengan berbagai permainan untuk anak-anak Dutaland'
+      src: '/Rumah depan.jpeg',
+      title: 'Rumah Modern Dutaland',
+      category: 'Hunian',
+      description: 'Rumah berkualitas dengan desain modern dan kokoh di Dutaland Residence'
     },
     {
-      src: 'https://images.unsplash.com/photo-1561487281-d59fee0ab84f',
-      title: 'Keamanan 24 Jam',
-      category: 'Keamanan',
-      description: 'Sistem keamanan modern dengan CCTV dan petugas profesional menjaga 24 jam non-stop'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1565008576549-bdde6e1a3543',
-      title: 'Jalan Perumahan Rapi',
+      src: '/cluster.jpeg',
+      title: 'Cluster Perumahan',
       category: 'Infrastruktur',
-      description: 'Jalan perumahan yang rapi, halus, dan lebar dengan drainase optimal untuk kenyamanan'
+      description: 'Cluster perumahan yang terorganisir dengan jalan lebar dan fasilitas lengkap'
     },
     {
-      src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e',
-      title: 'Suasana Asri',
+      src: '/cluster 1.jpeg',
+      title: 'Cluster 1 - Area Hunian',
+      category: 'Fasilitas',
+      description: 'Area hunian cluster 1 dengan tata letak yang nyaman dan akses mudah'
+    },
+    {
+      src: '/cluster 2.jpeg',
+      title: 'Cluster 2 - Perumahan',
       category: 'Lingkungan',
-      description: 'Lingkungan asri penuh penghijauan dengan taman dan pohon-pohon indah di setiap sudut'
+      description: 'Cluster 2 dengan rumah-rumah berkualitas dan lingkungan yang asri'
     },
     {
-      src: 'https://images.unsplash.com/photo-1571508601166-72f91dca6030',
-      title: 'Gerbang Utama',
-      category: 'Akses',
-      description: 'Gerbang utama yang megah dengan sistem akses masuk modern dan terkontrol'
+      src: '/Masjid.jpeg',
+      title: 'Masjid Riyadurrahman',
+      category: 'Fasilitas Umum',
+      description: 'Masjid Riyadurrahman sebagai fasilitas spiritual untuk penghuni Dutaland'
     },
     {
-      src: 'https://images.unsplash.com/photo-1553531088-189a29cf9584',
-      title: 'Kantor Pemasaran',
-      category: 'Layanan',
-      description: 'Kantor pemasaran profesional siap membantu konsultasi lengkap untuk investasi properti Anda'
+      src: '/duta.jpeg',
+      title: 'Dutaland Residence',
+      category: 'Proyek',
+      description: 'Pemandangan umum Dutaland Residence dengan lingkungan yang indah dan teratur'
     },
   ]
 
