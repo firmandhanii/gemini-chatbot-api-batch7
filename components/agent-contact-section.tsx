@@ -45,42 +45,42 @@ export default function AgentContactSection() {
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all duration-300 group cursor-pointer"
+                className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-gray-100 transition-all duration-300 group cursor-pointer border-2 border-white"
               >
-                <div className="w-12 h-12 rounded-lg bg-white bg-opacity-20 flex items-center justify-center group-hover:bg-opacity-30 transition-all">
+                <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-all" style={{ color: 'var(--property-green)' }}>
                   <MessageCircle size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-green-100">WhatsApp</p>
-                  <p className="text-xl font-bold">{phone}</p>
+                  <p className="text-sm text-gray-500">WhatsApp</p>
+                  <p className="text-xl font-bold text-gray-900">{phone}</p>
                 </div>
               </a>
 
               {/* Phone */}
               <a
                 href={`tel:${phone.replace(/\s/g, '')}`}
-                className="flex items-center gap-4 p-4 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all duration-300 group cursor-pointer"
+                className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-gray-100 transition-all duration-300 group cursor-pointer border-2 border-white"
               >
-                <div className="w-12 h-12 rounded-lg bg-white bg-opacity-20 flex items-center justify-center group-hover:bg-opacity-30 transition-all">
+                <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-all" style={{ color: 'var(--property-green)' }}>
                   <Phone size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-green-100">Telepon</p>
-                  <p className="text-xl font-bold">{phone}</p>
+                  <p className="text-sm text-gray-500">Telepon</p>
+                  <p className="text-xl font-bold text-gray-900">{phone}</p>
                 </div>
               </a>
 
               {/* Email */}
               <a
                 href={`mailto:${email}`}
-                className="flex items-center gap-4 p-4 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all duration-300 group cursor-pointer"
+                className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-gray-100 transition-all duration-300 group cursor-pointer border-2 border-white"
               >
-                <div className="w-12 h-12 rounded-lg bg-white bg-opacity-20 flex items-center justify-center group-hover:bg-opacity-30 transition-all">
+                <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-all" style={{ color: 'var(--property-green)' }}>
                   <Mail size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-green-100">Email</p>
-                  <p className="text-xl font-bold">{email}</p>
+                  <p className="text-sm text-gray-500">Email</p>
+                  <p className="text-xl font-bold text-gray-900">{email}</p>
                 </div>
               </a>
             </div>
